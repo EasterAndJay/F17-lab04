@@ -7,7 +7,7 @@ import javax.swing.JComponent;
 /**
    A component that draws a Picture by Deren Lei
 
-   @author Deren Lei (original drawing)
+   @author Deren Lei
    @version CS56, F17, UCSB
 */
 

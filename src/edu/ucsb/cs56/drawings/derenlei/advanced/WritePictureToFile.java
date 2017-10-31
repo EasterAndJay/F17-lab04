@@ -9,7 +9,7 @@ import java.io.IOException;
 /**
  *  A class with a main method that can write a drawing to a graphics file.
  *
- *  @author Deren Lei,
+ *  @author Deren Lei
  *  @version for CS56, F17, UCSB
  */
 

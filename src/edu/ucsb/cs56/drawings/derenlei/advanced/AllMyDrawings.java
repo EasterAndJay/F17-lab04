@@ -12,8 +12,8 @@ import edu.ucsb.cs56.drawings.utilities.GeneralPathWrapper;
 /**
  * A class with static methods for drawing various pictures
  *
- * @author Phill Conrad
- * @version for UCSB CS56, W16
+ * @author Deren Lei
+ * @version for UCSB CS56, F17
  */
 
 public class AllMyDrawings
@@ -128,12 +128,12 @@ public class AllMyDrawings
       	g2.drawString("A bunch of bowling balls and a few balls by Deren Lei", 20,20);
     }
 
-    /** Draw a different picture with a few houses and coffee cups
+    /** Draw a bunch of bowling balls
      */
 
     public static void drawPicture3(Graphics2D g2) {
 
-	      // label the drawing
+	// label the drawing
         g2.drawString("A bunch of bowling balls by Deren Lei", 20,20);
 
 

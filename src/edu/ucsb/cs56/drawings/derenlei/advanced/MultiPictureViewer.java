@@ -3,8 +3,7 @@ package edu.ucsb.cs56.drawings.derenlei.advanced;
 import javax.swing.JFrame;
 
 /** A viewer class to see a picture I drew with
- *  just three simple Java graphics objects, namely
- *  Rectangle, Line2D.Double, Ellipse2D.Double
+ *  simple Java graphics object, namely Ellipse2D.Double
  *
  * @author Deren Lei
  * @version for UCSB CS56, F17

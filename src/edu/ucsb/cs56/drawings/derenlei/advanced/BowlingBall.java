@@ -4,7 +4,7 @@ import java.awt.Shape;
 import java.awt.geom.Ellipse2D;
 
 /**
-   A House
+   A BowlingBall
 
    @author Deren Lei
    @version for CS56, F17, UCSB
@@ -13,7 +13,7 @@ import java.awt.geom.Ellipse2D;
 public class BowlingBall extends Ball implements Shape
 {
     /**
-     * Constructor for objects of class CoffeeCup
+     * Constructor for objects of class BowlingBall
      */
     public BowlingBall(double x, double y, double width, double height)
     {
@@ -41,8 +41,7 @@ public class BowlingBall extends Ball implements Shape
 	
         Ellipse2D.Double circle1 = new Ellipse2D.Double(x1, y1, width*0.1, height*0.1);
 	Ellipse2D.Double circle2 = new Ellipse2D.Double(x2, y2, width*0.1, height*0.1);
-	Ellipse2D.Double circle3 = new Ellipse2D.Double(x3, y3, width*0.1, height*0.1);
-	// add the windows to the house
+	Ellipse2D.Double circle3 = new Ellipse2D.Double(x3, y3, width*0.1, height*0.1); 
 	// Look up the meaning of the second parameter of append
 	// (Hint--is a method of "GeneralPath")
 

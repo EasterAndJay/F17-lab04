@@ -23,7 +23,7 @@ public class AllMyDrawings
 
     public static void drawPicture1(Graphics2D g2) {
 
-      	Ball b1 = new ball(100,250,50,75);
+      	Ball b1 = new Ball(100,250,50,75);
       	g2.setColor(Color.CYAN); g2.draw(b1);
 
       	// Make a black ball that's half the size,
@@ -31,7 +31,7 @@ public class AllMyDrawings
 
       	Shape b2 = ShapeTransforms.scaledCopyOfLL(b1,0.5,0.5);
       	b2 = ShapeTransforms.translatedCopyOf(b2,150,0);
-      	g2.setColor(Color.BLACK); g2.draw(b);
+      	g2.setColor(Color.BLACK); g2.draw(b2);
 
       	// Here's a ball that's 4x as big (2x the original)
       	// and moved over 150 more pixels to right.
@@ -111,13 +111,13 @@ public class AllMyDrawings
       	// Draw two simple balls
 
       	Ball b1 = new Ball(50,350,40,75);
-      	HouseWithWindows b2 = new Ball(200,350,200,100);
+      	Ball b2 = new Ball(200,350,200,100);
 
       	g2.draw(b1);
       	g2.setColor(new Color(0x002FA7));
 
       	// Rotate the second ball 45 degrees around its center.
-      	Shape hw3 = ShapeTransforms.rotatedCopyOf(b2, Math.PI/4.0);
+      	Shape b3 = ShapeTransforms.rotatedCopyOf(b2, Math.PI/4.0);
 
       	g2.draw(b3);
 

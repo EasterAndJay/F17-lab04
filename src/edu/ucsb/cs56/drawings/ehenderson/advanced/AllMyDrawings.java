@@ -24,20 +24,36 @@ public class AllMyDrawings
     
     public static void drawPicture1(Graphics2D g2) {
 	
-	Smartphone s1 = new Smartphone(100,550,250,450);
+	Smartphone s1 = new Smartphone(50,400,200,390);
 	g2.setColor(Color.BLACK); g2.draw(s1);
+
+        double camX = 150;
+        double camY = 119.5;
+        double camR = 10;
+
+	Circle camera = new Circle(camX, camY, camR);
+        g2.draw(camera);
 	
-	
-	// @@@ FINALLY, SIGN AND LABEL YOUR DRAWING*/
-	
-	//g2.setStroke(orig);
-	g2.setColor(Color.BLACK); 
+	double homeX = 150;
+	double homeY = 470.5;
+	double homeR = 15;
+
+	Circle home = new Circle(homeX, homeY, homeR);
+	g2.draw(home);
+
+
 	g2.drawString("A Smartphone by Ethan Henderson", 20,20);
     }
     
-    
+   /** Draw a picture of a Samsung Galaxy S7
+    */
+
     public static void drawPicture2(Graphics2D g2) {
 	
+    	Samsung s1 = new Samsung(50,550,250,450);
+	g2.setColor(Color.BLACK); g2.draw(s1);
+
+	g2.drawString("A Samsung Galaxy S7 by Ethan Henderson", 20,20);	
 	
     }       
 }

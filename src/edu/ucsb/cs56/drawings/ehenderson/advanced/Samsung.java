@@ -44,6 +44,10 @@ public class Samsung extends Smartphone implements Shape
 	GeneralPath gp = this.get();
     }
 
+    /**
+     * Add a camera 
+     */
+
     public void addCamera() {
 	
 	double camX = X + (.75*Width);
@@ -55,6 +59,10 @@ public class Samsung extends Smartphone implements Shape
 	GeneralPath gp = this.get();
 	gp.append(camera, false);
     }
+
+    /**
+     * Add a home button
+     */
 
     public void addHome() {
 	
@@ -69,6 +77,9 @@ public class Samsung extends Smartphone implements Shape
 	gp.append(home, false);
     }
 
+    /** 
+       Add 2 flash buttons to the phone
+    */
     public void addFlash() {
 	
 	double fx1 = X + (.20*Width);
@@ -88,6 +99,9 @@ public class Samsung extends Smartphone implements Shape
 	gp.append(flash2, false);
     }
     
+    /**
+     * Add a Speaker Bar
+     */
     public void addSpeaker() {
 	
 	double sx = X + (Width/3);

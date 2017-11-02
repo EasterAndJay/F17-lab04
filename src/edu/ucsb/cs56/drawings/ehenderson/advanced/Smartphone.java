@@ -69,6 +69,10 @@ public class Smartphone extends GeneralPathWrapper implements Shape
 
     }      
 
+    /**
+     * Add a camera to the Smartphone
+     */
+
     public void addCamera() {
 	double camX = X + (.5*Width);
 	double camY = Y + (.05*Height);
@@ -79,6 +83,10 @@ public class Smartphone extends GeneralPathWrapper implements Shape
 	GeneralPath gp = this.get();
 	gp.append(camera, false);
     }
+
+    /**
+     * Add a home button to the Smartphone
+     */ 
 
     public void addHome() {
 	double homeX = X + (.5*Width);

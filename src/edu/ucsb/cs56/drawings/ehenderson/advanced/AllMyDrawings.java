@@ -10,9 +10,7 @@ import edu.ucsb.cs56.drawings.utilities.ShapeTransforms;
 import edu.ucsb.cs56.drawings.utilities.GeneralPathWrapper;
 
 /**
- * A class with static methods for drawing various pictures
  * 
- * @author Phill Conrad 
  * @author Ethan Henderson
  * @version for UCSB CS56, F17 
  */
@@ -25,21 +23,11 @@ public class AllMyDrawings
     public static void drawPicture1(Graphics2D g2) {
 	
 	Smartphone s1 = new Smartphone(50,400,200,390);
-	g2.setColor(Color.BLACK); g2.draw(s1);
+	g2.setColor(Color.BLACK); 
+	s1.addCamera();
+	s1.addHome();
+	g2.draw(s1);
 
-        double camX = 150;
-        double camY = 119.5;
-        double camR = 10;
-
-	Circle camera = new Circle(camX, camY, camR);
-        g2.draw(camera);
-	
-	double homeX = 150;
-	double homeY = 470.5;
-	double homeR = 15;
-
-	Circle home = new Circle(homeX, homeY, homeR);
-	g2.draw(home);
 
 
 	g2.drawString("A Smartphone by Ethan Henderson", 20,20);
@@ -50,8 +38,20 @@ public class AllMyDrawings
 
     public static void drawPicture2(Graphics2D g2) {
 	
-    	Samsung s1 = new Samsung(50,550,250,450);
-	g2.setColor(Color.BLACK); g2.draw(s1);
+	double x = 50;
+	double y = 400;
+	double width = 200;
+	double height = 390;
+	
+    	Samsung s1 = new Samsung(x, y, width, height);
+	g2.setColor(Color.BLACK); 
+	
+	s1.addCamera(); 
+	s1.addHome();
+	s1.addFlash();
+	s1.addSpeaker();
+	g2.draw(s1);
+
 
 	g2.drawString("A Samsung Galaxy S7 by Ethan Henderson", 20,20);	
 	

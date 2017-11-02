@@ -19,6 +19,10 @@ import edu.ucsb.cs56.drawings.utilities.GeneralPathWrapper;
 */
 public class Smartphone extends GeneralPathWrapper implements Shape
 {
+	double X;
+	double Y;
+	double Width;
+	double Height;
     /**
        Constructor
        
@@ -33,7 +37,12 @@ public class Smartphone extends GeneralPathWrapper implements Shape
         // Rather than having to scale at the end, we can just
         // draw things the right way to begin with, using the
         // x, y, width and height.   .
-       	y = 500 - y; 
+       	y = 480 - y; 
+	X = x;
+	Y = y;
+	Width = width;
+	Height = height;
+
         double screenHeight = .80 * height;
         double splitHeightY = (height - screenHeight)/2;
 	double splitLengthX = .05 * width;
@@ -59,4 +68,26 @@ public class Smartphone extends GeneralPathWrapper implements Shape
 
 
     }      
+
+    public void addCamera() {
+	double camX = X + (.5*Width);
+	double camY = Y + (.05*Height);
+	double camR = .02*Height;
+
+	Circle camera = new Circle(camX, camY, camR);
+
+	GeneralPath gp = this.get();
+	gp.append(camera, false);
+    }
+
+    public void addHome() {
+	double homeX = X + (.5*Width);
+	double homeY = Y + (.95*Height);
+	double homeR = .04*Height;
+
+	Circle home = new Circle(homeX, homeY, homeR);
+
+	GeneralPath gp = this.get();
+	gp.append(home, false);
+    }
 }

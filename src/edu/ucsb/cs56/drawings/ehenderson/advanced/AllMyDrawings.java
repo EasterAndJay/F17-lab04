@@ -56,4 +56,31 @@ public class AllMyDrawings
 	g2.drawString("A Samsung Galaxy S7 by Ethan Henderson", 20,20);	
 	
     }       
+
+    /** Draw a picture of both phones side-by-side
+     */
+
+    public static void drawPicture3(Graphics2D g2) {
+	
+	double x = 50;
+	double y = 400;
+	double width = 200;
+	double height = 390;
+
+	Smartphone s1 = new Smartphone(x, y, width, height);
+	s1.addCamera();
+	s1.addHome();
+	g2.draw(s1);
+
+	Samsung gs1 = new Samsung((2*x + width), y, width, height);
+	
+	gs1.addCamera();
+	gs1.addHome();
+	gs1.addFlash();
+	gs1.addSpeaker();
+	g2.draw(gs1);
+
+	g2.drawString("A Smartphone and a Samsung Galaxy S7 by Ethan Henderson", 20, 20);
+    }	
+
 }
